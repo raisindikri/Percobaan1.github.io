@@ -1,0 +1,21 @@
+.jam-digital-malasngoding {
+    overflow: hidden;
+    width: 160px;
+    margin: auto;
+    /* border: 2px solid #efefef; */
+}
+
+.kotak {
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-color: #189fff;
+}
+
+.jam-digital-malasngoding p {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* source https://www.malasngoding.com/membuat-jam-analog-dan-digital-dengan-javascript/ */

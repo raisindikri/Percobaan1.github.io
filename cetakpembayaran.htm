@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        .container {
+            width: 650px;
+            margin: auto;
+            border: 1px dotted blue;
+            padding: 10px;
+            background: grey;
+            color: #fff;
+        }
+
+        h2 {
+            text-align: center;
+            text-decoration: underline;
+
+
+        }
+
+        table {
+            background: DeepPink;
+            margin: auto;
+
+        }
+
+        td {
+            padding: 10px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Form Pemesanan Borongan</h2>
+        <table style="border: 1;">
+            <tr>
+                <th>No </th>
+                <th>Jenis </th>
+                <th>harga/kg</th>
+                <th>jumlah/kg</th>
+            </tr>
+
+            <tr>
+                <th>1</th>
+                <th>Pepaya</th>
+                <th>Rp.<input type="text" name="harga" id="pepaya" size="7" value="6000" readonly></th>
+                <th>Rp.<input type="number" name="jumlah_pepaya" id="harga_pepaya" size="7" value="0"
+                        onchange="total()"></th>
+            </tr>
+
+            <tr>
+                <th>2</th>
+                <th>Alpokat</th>
+                <th>Rp.<input type="text" name="harga" id="alpokat" size="7" value="7000" readonly></th>
+                <th>Rp.<input type="number" name="jumlah_alpokat" id="harga_alpokat" size="7" value="0"
+                        onchange="total()"></th>
+            </tr>
+
+            <tr>
+                <th>3</th>
+                <th>Jeruk Nipis</th>
+                <th>Rp.<input type="text" name="harga" id="jeruk" size="7" value="8000" readonly></th>
+                <th>Rp.<input type="number" name="jumlah_jeruk" id="harga_jeruk" size="7" value="0" onchange="total()">
+                </th>
+            </tr>
+            <tr>
+                <th>4</th>
+                <th>Jeruk Mandarin</th>
+                <th>Rp.<input type="text" name="harga" id="jerukmandarin" size="7" value="7000" readonly></th>
+                <th>Rp.<input type="number" name="jumlah_jerukmandarin" id="harga_jerukmandarin" size="7" value="0"
+                        onchange="total()">
+                </th>
+            </tr>
+            <tr>
+
+                <th colspan="3" style="text-align:right">jumlah total</th>
+                <th>Rp.<input type="text" name="total_jumlah" id="total" size="7" value="" readonly></th>
+            </tr>
+        </table>
+        <br><br>
+        <input type="button" onclick="window.print()" value="cetak bukti">
+
+        <script type="text/javascript">
+            function total() {
+                var vpepaya = 6000 * parseInt(document.getElementById('harga_pepaya').value);
+                var valpokat = 7000 * parseInt(document.getElementById('harga_alpokat').value);
+                var vjeruk = 8000 * parseInt(document.getElementById('harga_jeruk').value);
+                var vjerukmandarin = 7000 * parseInt(document.getElementById('harga_jeruk').value);
+
+                var jumlah_harga = vpepaya + valpokat + vjeruk + vjerukmandarin;
+
+                document.getElementById('total').value = jumlah_harga;
+            }
+        </script>
+    </div>
+</body>
+
+</html>

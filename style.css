@@ -1,0 +1,172 @@
+@import url('https: //fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+
+}
+
+.profile header {
+    text-align: center;
+}
+
+h2,
+h3 {
+    color: #00a2c6;
+    text-transform: uppercase;
+
+}
+
+h1 {
+    text-transform: uppercase;
+    color: blue;
+}
+
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #00a2c6;
+    text-align: center;
+    font-weight: bold;
+}
+
+p.content::first-letter {
+    font-size: 32px;
+    font-weight: bold;
+    color: saddlebrown;
+
+}
+
+p {
+    /* text-indent: 2em; */
+    text-align: justify;
+}
+
+#kota p {
+    text-align: center;
+}
+
+blockquote::before,
+blockquote::after {
+    content: '"';
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+}
+
+blockquote {
+    color: black;
+    font-weight: bold;
+}
+
+.featured-img {
+    width: 30%;
+    float: left;
+    object-position: center;
+    margin-right: 20px;
+}
+
+.profile img {
+    width: 200px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #00c8eb;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    background-color: #00a2c6;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+header {
+    display: inline;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+.left-content {
+    width: 75%;
+    height: 100%;
+    float: left;
+}
+
+.right-content {
+    width: 25%;
+    float: right;
+
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+@media screen and (max-width:1000px) {
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+#bggambar {
+    background:
+        url('assets/image/toko.png') 0 100% no-repeat;
+
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    background-position: center center;
+    background-size: cover;
+}
